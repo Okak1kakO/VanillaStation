@@ -226,11 +226,6 @@
     noRot: true
     drawdepth: Mobs
     scale: 0.8, 0.8
-    layers:
-    - map: [ "enum.DamageStateVisualLayers.Base" ]
-    - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
-      shader: unshaded
-    - map: [ "head" ]
   - type: CanEscapeInventory
   - type: MultiHandedItem
   - type: Item
@@ -264,7 +259,6 @@
   - type: ContentEye
     targetZoom: "1.125, 1.125"
     maxZoom: "1.125, 1.125"
-  - type: FelinidAccent
   - type: MeleeWeapon
     animation: WeaponArcClaw
     soundHit:
@@ -331,10 +325,12 @@
     Hair: MobHumanoidAnyMarking
     FacialHair: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking
+    UndergarmentTop: MobHumanoidAnyMarking
+    UndergarmentBottom: MobHumanoidAnyMarking
     Chest: MobHumanTorso
-    Tail: MobHumanoidAnyMarking  # Хвост
+    Tail: MobHumanoidAnyMarking # хвост
     Eyes: MobHumanoidEyes
-    HeadTop: MobHumanoidAnyMarking  # Уши
+    HeadTop: MobHumanoidAnyMarking
     LArm: MobHumanLArm
     RArm: MobHumanRArm
     LHand: MobHumanLHand
@@ -377,7 +373,6 @@
     Chest:
       points: 1
       required: false
-      defaultMarkings: [ GauzeShoulder ]
     Legs:
       points: 2
       required: false
