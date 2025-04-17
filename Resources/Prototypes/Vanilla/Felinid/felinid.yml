@@ -146,7 +146,6 @@
   bodyPart: HeadTop
   markingCategory: HeadTop
   speciesRestriction: [FelinidSpec, Human]
-  sponsorOnly: false # Corvax-Sponsors
   coloring:
     default:
       type:
@@ -228,22 +227,23 @@
   id: BaseMobFelinid
   abstract: true
   components:
-  # - type: MovementSpeedModifier
-  #   baseSprintSpeed: 9
-  #   BaseSprintSpeed: 9
-  #   sprintSpeedModifier: 10
-  # - type: Sprite
-  #   layers:
-  #   - map: [ "enum.DamageStateVisualLayers.Base" ]
-  #   - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
-  #     shader: unshaded
-  #   - map: [ "head" ]
-  # - type: CanEscapeInventory
-  # - type: MultiHandedItem
-  # - type: Item
-  #   size: Huge
-  #   Pickup:
-  #   BasesistTime: 10
+  - type: MovementSpeedModifier
+    baseSprintSpeed: 9
+    BaseSprintSpeed: 9
+    sprintSpeedModifier: 10
+  - type: Sprite
+    noRot: true
+    drawdepth: Mobs
+    scale: 0.8, 0.8
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+    - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
+      shader: unshaded
+    - map: [ "head" ]
+  - type: CanEscapeInventory
+  - type: MultiHandedItem
+  - type: Item
+    size: Huge
   - type: HumanoidAppearance
     species: FelinidSpec
   - type: Hunger # on 1.5x more
@@ -292,10 +292,6 @@
     damageRecovery:
       types:
         Asphyxiation: -2.0
-  - type: Sprite
-    noRot: true
-    drawdepth: Mobs
-    scale: 0.8, 0.8
   - type: InteractionPopup
     successChance: 1
     interactSuccessString: petting-success-generic

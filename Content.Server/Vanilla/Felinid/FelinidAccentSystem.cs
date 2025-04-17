@@ -1,4 +1,5 @@
 using Content.Server.Speech.Components;
+using Content.Server.Speech;
 
 namespace Content.Server.Speech.EntitySystems
 {
