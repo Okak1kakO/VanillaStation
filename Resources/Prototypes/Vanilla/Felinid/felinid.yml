@@ -79,7 +79,6 @@
   bodyPart: HeadTop
   markingCategory: HeadTop
   speciesRestriction: [FelinidSpec, Human]
-  sponsorOnly: false # Corvax-Sponsors
   coloring:
     default:
       type:
@@ -103,7 +102,6 @@
   bodyPart: Tail
   markingCategory: Tail
   speciesRestriction: [FelinidSpec, Human]
-  sponsorOnly: false # Corvax-Sponsors
   coloring:
     default:
       type:
@@ -115,14 +113,13 @@
         - !type:SkinColoring
   sprites:
   - sprite: Mobs/Customization/cat_parts.rsi
-    state: tail_cat_wag # Corvax-Sponsors
+    state: tail_cat_wag
 
 - type: marking
   id: CatEarsStubbyFelinid
   bodyPart: HeadTop
   markingCategory: HeadTop
   speciesRestriction: [FelinidSpec, Human]
-  sponsorOnly: false # Corvax-Sponsors
   coloring:
     default:
       type:
@@ -169,7 +166,6 @@
   bodyPart: HeadTop
   markingCategory: HeadTop
   speciesRestriction: [FelinidSpec, Human]
-  sponsorOnly: false # Corvax-Sponsors
   coloring:
     default:
       type:
@@ -193,7 +189,6 @@
   bodyPart: Tail
   markingCategory: Tail
   speciesRestriction: [FelinidSpec, Human]
-  sponsorOnly: false # Corvax-Sponsors
   coloring:
     default:
       type:
@@ -227,10 +222,6 @@
   id: BaseMobFelinid
   abstract: true
   components:
-  - type: MovementSpeedModifier
-    baseSprintSpeed: 9
-    BaseSprintSpeed: 9
-    sprintSpeedModifier: 10
   - type: Sprite
     noRot: true
     drawdepth: Mobs
@@ -358,7 +349,7 @@
   id: MobFelinidMarkingLimits
   points:
     Tail: # the cat tail joke
-      points: 1 # Corvax-Sponsors
+      points: 1
       required: false
       defaultMarkings: [ CatTailFelinid ]
     HeadTop:
@@ -366,7 +357,7 @@
       required: false
       defaultMarkings: [ CatEarsFelinid, CyberlimbRArmBishop ]
     Special: # the cat ear joke
-      points: 1 # Corvax-Sponsors
+      points: 1
       required: false
     Hair:
       points: 1
@@ -392,35 +383,6 @@
       required: false
     Arms:
       points: 2
-      required: false
-# # Bishop
-# - type: marking
-#   id: CyberlimbRArmBishop
-#   bodyPart: RArm
-#   markingCategory: Arms
-#   speciesRestriction: [ Human, Dwarf, Arachnid, FelinidSpec ]
-#   sponsorOnly: true
-#   coloring:
-#     default:
-#       type:
-#         !type:SimpleColoring
-#           color: "#FFFFFF"
-#   sprites:
-#     - sprite: Corvax/Mobs/Customization/Cyberlimbs/bishop.rsi
-#       state: r_arm
-#-----------------------------------------
-
-#Рандом спец
-# - type: weightedRandomSpecies
-#   id: SpeciesWeights
-#   weights:
-#     Human: 5
-#     Reptilian: 4
-#     SlimePerson: 4
-#     Vulpkanin: 4 # Corvax-Vulp
-#     Diona: 2
-#     Felinid: 3
-
 # Звуки эмоции
 - type: emoteSounds
   id: MaleFelinid
