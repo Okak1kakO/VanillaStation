@@ -383,6 +383,7 @@
       required: false
     Arms:
       points: 2
+      required: false
 # Звуки эмоции
 - type: emoteSounds
   id: MaleFelinid
