@@ -1,7 +1,7 @@
 - type: trait
   id: FelinidAccent
-  name: Фелинидский акцент
-  description: Акцент обычно присущий фелинидам, но у большенства речь стабильна. [Р] и [Л] заменяются на - [В].
+  name: trait-felinid-name
+  description: trait-felinid-desc
   category: SpeechTraits
   cost: 1
   components:
