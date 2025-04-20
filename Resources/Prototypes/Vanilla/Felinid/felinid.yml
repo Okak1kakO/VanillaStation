@@ -257,8 +257,8 @@
   - type: Inventory
     speciesId: digi
   - type: ContentEye
-    targetZoom: "1.125, 1.125"
-    maxZoom: "1.125, 1.125"
+    targetZoom: "1, 1"
+    maxZoom: "1, 1"
   - type: MeleeWeapon
     animation: WeaponArcClaw
     soundHit:
@@ -420,13 +420,13 @@
     variation: 0.125
   sounds:
     Scream:
-      path: /Audio/Voice/felinidsound/kriks.ogg #кастом крик
+      path: /Resources/Prototypes/Vanilla/Felinid/felinidsound/kriks.ogg #кастом крик
     Laugh:
       collection: FemaleLaugh
     Purring:
-      path: /Audio/Voice/felinidsound/murchanie.ogg # Мурчание
+      path: /Resources/Prototypes/Vanilla/Felinid/felinidsound/murchanie.ogg # Мурчание
     Meow:
-      path: /Audio/Voice/felinidsound/myaukan.ogg #Мяуканье
+      path: /Resources/Prototypes/Vanilla/Felinid/felinidsound/myaukan.ogg #Мяуканье
     Sneeze:
       collection: FemaleSneezes
     Cough:
