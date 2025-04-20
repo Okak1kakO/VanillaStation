@@ -428,13 +428,13 @@
     variation: 0.125
   sounds:
     Scream:
-      path: /Prototypes/Vanilla/Felinid/felinidsound/kriks.ogg #кастом крик
+      path: /Audio/Voice/felinidsound/kriks.ogg #кастом крик
     Laugh:
       collection: FemaleLaugh
     Purring:
-      path: /Prototypes/Vanilla/Felinid/felinidsound/murchanie.ogg # Мурчание
+      path: /Audio/Voice/felinidsound/murchanie.ogg # Мурчание
     Meow:
-      path: /Prototypes/Vanilla/Felinid/felinidsound/myaukan.ogg #Мяуканье
+      path: Audio/Voice/felinidsound/myaukan.ogg #Мяуканье
     Sneeze:
       collection: FemaleSneezes
     Cough:
