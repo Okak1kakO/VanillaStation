@@ -434,7 +434,7 @@
     Purring:
       path: /Audio/Voice/felinidsound/murchanie.ogg # Мурчание
     Meow:
-      path: Audio/Voice/felinidsound/myaukan.ogg #Мяуканье
+      path: /Audio/Voice/felinidsound/myaukan.ogg #Мяуканье
     Sneeze:
       collection: FemaleSneezes
     Cough:
