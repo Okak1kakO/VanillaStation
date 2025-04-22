@@ -135,7 +135,7 @@
     default:
       type:
         !type:CategoryColoring
-        category: Hair
+         category: Hair
       fallbackTypes:
         - !type:SkinColoring
     layers:
@@ -233,6 +233,14 @@
   id: BaseMobFelinid
   abstract: true
   components:
+  - type: Reactive
+    reactions:
+    - reagents: [ Water ]
+      methods: [ Touch ]
+      effects:
+      - !type:Jitter
+      - !type:Emote
+        emote: Scream
   - type: Fixtures
     fixtures:
       fix1:
