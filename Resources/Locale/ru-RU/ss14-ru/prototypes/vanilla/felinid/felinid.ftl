@@ -1,10 +1,12 @@
-ent-PartFelinid = Felinid body part
+ent-PartFelinid = Фелинид части тела
     .desc = { ent-BaseItem.desc }
 ent-OrganFelinidStomach = { ent-OrganAnimalStomach }
     .desc = { ent-OrganAnimalStomach.desc }
-ent-MobFelinid = Urist McFeli
+ent-MobFelinid = Урист МакФели
     .desc = { ent-BaseMobFelinid.desc }
-ent-BaseMobFelinid = Urist McFeli
+ent-BaseMobFelinid = Урист МакФели
     .desc = { ent-BaseMobSpeciesOrganic.desc }
-ent-MobFelinidDummy = Urist McHands the felinid
-    .desc = A dummy Felinid meant to be used in character setup.
+ent-MobFelinidDummy = Урист МакХэндс, кошачий
+    .desc = Манекен фелинида, предназначенный для использования при создании персонажа.
+chat-emote-msg-murchanie =  мурчит
+chat-emote-msg-myaukan = мяукает

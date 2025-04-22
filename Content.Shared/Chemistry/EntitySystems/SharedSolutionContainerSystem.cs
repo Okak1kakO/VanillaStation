@@ -545,7 +545,7 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
         var solution = comp.Solution;
 
         if (quantity < 0)
-            throw new InvalidOperationException("Quantity must be positive");
+            ф
 
         quantity = FixedPoint2.Min(quantity, solution.AvailableVolume, source.Volume);
         if (quantity == 0)
