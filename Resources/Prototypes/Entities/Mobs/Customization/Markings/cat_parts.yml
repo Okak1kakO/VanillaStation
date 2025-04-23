@@ -2,7 +2,7 @@
   id: CatEars
   bodyPart: Special
   markingCategory: Special
-  speciesRestriction: [Human, FelindSpec]
+  speciesRestriction: [Human]
   sponsorOnly: false # Corvax-Sponsors
   coloring:
     default:
