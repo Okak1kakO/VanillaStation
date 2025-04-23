@@ -1,5 +1,5 @@
 # TODO: Add descriptions (many)
-# TODO BODY: Part damage
+# TODO BODY: Part damag
 - type: entity
   id: PartFelinid
   parent: [BaseItem, BasePart]
@@ -499,7 +499,6 @@
   chatMessages: ["chat-emote-msg-myaukan"]
   chatTriggers:
    - мяукает
-
 
 - type: emote
   id: Meow
