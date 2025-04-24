@@ -1,0 +1,12 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckSergant
+  name: vampire cloak
+  description: Worn by high ranking vampires of the transylvanian society of vampires.
+  components:
+  - type: Sprite
+    sprite: Resources/Textures/Vanilla/cloth/chevron.rsi
+    state: icone
+  - type: Clothing
+    sprite: Resources/Textures/Vanilla/cloth/chevron.rsi
+    state: equipped-NECK
