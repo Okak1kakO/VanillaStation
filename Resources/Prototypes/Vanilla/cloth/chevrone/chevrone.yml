@@ -4,8 +4,8 @@
   parent: ClothingNeckBase
   id: ClothingNeckChevroneBase
   abstract: true
-  name: chevrone
-  description: Be nothing do crime.
+  name: marking-chevron-name
+  description: marking-chevron-desc
   components:
   - type: Item
     size: Tiny
@@ -17,8 +17,8 @@
 - type: entity
   parent: ClothingNeckChevroneBase
   id: ClothingNeckSergant #сержант
-  name: sergante chevrone
-  description: sergante chevrone
+  name: marking-sergant-name
+  description: marking-sergant-desc
   components:
   - type: Sprite
     state: sergant
@@ -28,8 +28,8 @@
 - type: entity
   parent: ClothingNeckChevroneBase
   id: ClothingNeckSTSergant #старший сержант
-  name: St.sergante chevrone
-  description:  St.sergante chevrone
+  name: marking-STsergant-name
+  description: marking-STsergant-desc
   components:
   - type: Sprite
     state: STsergant
@@ -39,8 +39,8 @@
 - type: entity
   parent: ClothingNeckChevroneBase
   id: ClothingNeckJunLiuten
-  name: JunLiuten chevrone #лейтенант
-  description:  St.sergante chevrone
+  name: marking-liu-name #лейтенант
+  description: marking-liu-desc
   components:
   - type: Sprite
     state: juniorLiutinant
@@ -50,8 +50,8 @@
 - type: entity
   parent: ClothingNeckChevroneBase
   id: ClothingNeckLiuten #старший лейтенант
-  name: STLiuten chevrone
-  description:  St.sergante chevrone
+  name: marking-STliu-name
+  description: marking-STliu-desc
   components:
   - type: Sprite
     state: Liutinant
@@ -61,8 +61,8 @@
 - type: entity
   parent: ClothingNeckChevroneBase
   id: ClothingNeckCaptain #капитан
-  name: captain chevrone
-  description: Captain chevrone
+  name: marking-captain-name
+  description: marking-captain-desc
   components:
   - type: Sprite
     state: captain
@@ -72,8 +72,8 @@
 - type: entity
   parent: ClothingNeckChevroneBase
   id: ClothingNeckMajor #майор
-  name: Major chevrone
-  description: Captain chevrone
+  name: marking-major-name
+  description: marking-major-desc
   components:
   - type: Sprite
     state: Major
@@ -83,8 +83,8 @@
 - type: entity
   parent: ClothingNeckChevroneBase
   id: ClothingNecklieutenantcolonel #подполковник
-  name: lieutenant colonel chevrone
-  description: Captain chevrone
+  name: marking-LiuColonliu-name
+  description: marking-LiuColonliu-desc
   components:
   - type: Sprite
     state: lieutenantcolonel
@@ -94,8 +94,8 @@
 - type: entity
   parent: ClothingNeckChevroneBase
   id: ClothingNeckColonel #полковник
-  name: colonel chevrone
-  description: Captain chevrone
+  name: marking-colonel-name
+  description: marking-colonliu-desc
   components:
   - type: Sprite
     state: colonel
@@ -105,8 +105,8 @@
 - type: entity
   parent: ClothingNeckChevroneBase
   id: ClothingNeckDecCap #капитан-детектив
-  name: captain-dec chevrone
-  description: Captain chevrone
+  name: marking-DecCap-name
+  description: marking-DecCap-desc
   components:
   - type: Sprite
     state: CaptainDec
@@ -116,21 +116,21 @@
 - type: entity
   parent: ClothingNeckChevroneBase
   id: ClothingNeckDecMaj #майор-детектив
-  name: colonel chevrone
-  description: major-dec chevrone
+  name: marking-DecMaj-name
+  description: marking-DecMaj-desc
   components:
   - type: Sprite
     state: MajorDec
   - type: Clothing
     equippedPrefix: MajorDec
 
-#------------------------------------------
-#----------------Лодаут--------------------
+#------------------------------------------------------------------------------
+#----------------Лодаут--------------------------------------------------------
 
 #------------------ГСБ---------------------
 - type: loadoutGroup
   id: ChevronNeckHos
-  name: ChevronNeck
+  name: marking-chevron-nec-name
   minLimit: 0
   maxLimit: 1
   loadouts:
@@ -161,12 +161,12 @@
 
 #------------------------------------------
 
-#------------------Варден-------------------
+#------------------Варден------------------
 #лодаута у вардена в loadout_groups.yml для neck (шеи) нет, тогда пусть тут будет
 
 - type: loadoutGroup
   id: ChevronNeckWarden
-  name: ChevronNeck
+  name: marking-chevron-nec-name
   minLimit: 0
   maxLimit: 1
   loadouts:
@@ -195,4 +195,106 @@
       role: JobHeadOfSecurity
       time: 126000 #35 hrs
 
+#------------------------------------------
 
+#------------------Офицер-СБ---------------
+- type: loadoutGroup
+  id: ChevronNeckOffSec
+  name: marking-chevron-nec-name
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - OfficerSecurityCaptain
+  - OfficerSecurityStLiut
+  - OfficerSecurityLiut
+  - OfficerSecuritySTSergant
+  - OfficerSecuritySergant
+
+- type: loadout
+  id: OfficerSecurityCaptain
+  equipment:
+    neck: ClothingNeckCaptain #капитан
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobHeadOfSecurity
+      time: 252000 #70 hrs
+
+- type: loadout
+  id: OfficerSecurityStLiut #старлей
+  equipment:
+    neck: ClothingNeckLiuten
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobHeadOfSecurity
+      time: 216000 #60 hrs
+
+- type: loadout
+  id: OfficerSecurityLiut #лейтенант
+  equipment:
+    neck: ClothingNeckJunLiuten
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobHeadOfSecurity
+      time: 180000 #50 hrs
+
+- type: loadout
+  id: OfficerSecuritySTSergant #старший сержант
+  equipment:
+    neck: ClothingNeckSTSergant
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobHeadOfSecurity
+      time: 108000 #30 hrs
+
+- type: loadout
+  id: OfficerSecuritySergant #сержант
+  equipment:
+    neck: ClothingNeckSergant
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobHeadOfSecurity
+      time: 18000 #5 hrs
+
+#------------------------------------------
+
+#------------------Офицер-СБ---------------
+- type: loadoutGroup
+  id: ChevronNeckDec
+  name: marking-chevron-nec-name
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - DetCaptain
+  - DetMajor
+
+- type: loadout
+  id: DetCaptain
+  equipment:
+    neck: ClothingNeckCaptain #капитан
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobHeadOfSecurity
+      time: 144000 #40 hrs
+
+- type: loadout
+  id: DetMajor #майор
+  equipment:
+    neck: ClothingNeckLiuten
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobHeadOfSecurity
+      time: 252000 #70 hrs

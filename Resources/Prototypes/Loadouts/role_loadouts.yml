@@ -394,6 +394,7 @@
 #  - Inventory # Corvax-Loadouts
   - HeadofSecurityHead
   - HeadofSecurityNeck
+  - ChevronNeckHos #Rayten-Loadouts
   - HeadofSecurityJumpsuit
   - SecurityBackpack
   - SecurityBelt
@@ -404,14 +405,13 @@
   - Trinkets
   - SecurityStar
   - GroupSpeciesBreathToolSecurity
-  - ChevronNeckHos #!
 
 - type: roleLoadout
   id: JobWarden
   groups:
 #  - Inventory # Corvax-Loadouts
   - WardenHead
-  - ChevronNeckWarden #!
+  - ChevronNeckWarden #Rayten-Loadouts
   - WardenJumpsuit
   - SecurityBackpack
   - SecurityBelt
@@ -428,6 +428,7 @@
   groups:
 #  - Inventory # Corvax-Loadouts
   - SecurityHead
+  - ChevronNeckOffSec
   - SecurityJumpsuit
   - SecurityBackpack
   - SecurityOuterClothing
@@ -447,6 +448,7 @@
   - GroupTankHarness
   - DetectiveHead
   - DetectiveNeck
+  - ChevronNeckDec
   - DetectiveJumpsuit
   - SecurityBackpack
   - DetectiveOuterClothing
