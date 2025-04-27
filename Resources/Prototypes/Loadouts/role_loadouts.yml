@@ -404,12 +404,14 @@
   - Trinkets
   - SecurityStar
   - GroupSpeciesBreathToolSecurity
+  - ChevronNeckHos #!
 
 - type: roleLoadout
   id: JobWarden
   groups:
 #  - Inventory # Corvax-Loadouts
   - WardenHead
+  - ChevronNeckWarden #!
   - WardenJumpsuit
   - SecurityBackpack
   - SecurityBelt
