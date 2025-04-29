@@ -193,7 +193,18 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobWarden
-      time: 126000 #35 hrs
+      time: 126000 #50 hrs
+
+- type: loadout
+  id: OfficerSecurityCaptain
+  equipment:
+    neck: ClothingNeckCaptain #капитан
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobSecurityOfficer
+      time: 252000 #30 hrs
 
 #------------------------------------------
 
@@ -207,8 +218,6 @@
   - OfficerSecurityCaptain
   - OfficerSecurityStLiut
   - OfficerSecurityLiut
-  - OfficerSecuritySTSergant
-  - OfficerSecuritySergant
 
 - type: loadout
   id: OfficerSecurityCaptain
@@ -242,59 +251,3 @@
       !type:RoleTimeRequirement
       role: JobSecurityOfficer
       time: 180000 #50 hrs
-
-- type: loadout
-  id: OfficerSecuritySTSergant #старший сержант
-  equipment:
-    neck: ClothingNeckSTSergant
-  effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:RoleTimeRequirement
-      role: JobSecurityOfficer
-      time: 108000 #30 hrs
-
-- type: loadout
-  id: OfficerSecuritySergant #сержант
-  equipment:
-    neck: ClothingNeckSergant
-  effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:RoleTimeRequirement
-      role: JobSecurityOfficer
-      time: 18000 #5 hrs
-
-#------------------------------------------
-
-#------------------Детектив----------------
-- type: loadoutGroup
-  id: ChevronNeckDec
-  name: marking-chevron-nec-name
-  minLimit: 0
-  maxLimit: 1
-  loadouts:
-  - DetCaptain
-  - DetMajor
-
-- type: loadout
-  id: DetCaptain
-  equipment:
-    neck: ClothingNeckDecCap #капитан
-  effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:RoleTimeRequirement
-      role: JobDetective
-      time: 144000 #40 hrs
-
-- type: loadout
-  id: DetMajor #майор
-  equipment:
-    neck: ClothingNeckDecMaj
-  effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:RoleTimeRequirement
-      role: JobDetective
-      time: 252000 #70 hrs
