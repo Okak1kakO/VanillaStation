@@ -1,0 +1,300 @@
+#------------------------------------------
+#------------Шевроны-спрайты---------------
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckChevroneBase
+  abstract: true
+  name: marking-chevron-name
+  description: marking-chevron-desc
+  components:
+  - type: Item
+    size: Tiny
+  - type: Sprite
+    sprite: /Textures/Vanilla/cloth/chevron.rsi
+  - type: Clothing
+    sprite: /Textures/Vanilla/cloth/chevron.rsi
+
+- type: entity
+  parent: ClothingNeckChevroneBase
+  id: ClothingNeckSergant #сержант
+  name: chevrons of a sergeant!!!
+  description: Sir, yes, sir!
+  components:
+  - type: Sprite
+    state: sergant
+  - type: Clothing
+    equippedPrefix: sergant
+
+- type: entity
+  parent: ClothingNeckChevroneBase
+  id: ClothingNeckSTSergant #старший сержант
+  name: chevrons of the senior sergeant
+  description: Now he is told "Sir, yes, sir!"
+  components:
+  - type: Sprite
+    state: STsergant
+  - type: Clothing
+    equippedPrefix: STsergant
+
+- type: entity
+  parent: ClothingNeckChevroneBase
+  id: ClothingNeckJunLiuten
+  name: chevrons of a lieutenant #лейтенант
+  description: For some reason, everyone wants to dance with you.
+  components:
+  - type: Sprite
+    state: juniorLiutinant
+  - type: Clothing
+    equippedPrefix: juniorLiutinant
+
+- type: entity
+  parent: ClothingNeckChevroneBase
+  id: ClothingNeckLiuten #старший лейтенант
+  name: chevrons of the senior lieutenant
+  description: They want to dance with you with great enthusiasm.
+  components:
+  - type: Sprite
+    state: Liutinant
+  - type: Clothing
+    equippedPrefix: Liutinant
+
+- type: entity
+  parent: ClothingNeckChevroneBase
+  id: ClothingNeckCaptain #капитан
+  name: captain's chevrons
+  description: This is not the captain you might think of.
+  components:
+  - type: Sprite
+    state: captain
+  - type: Clothing
+    equippedPrefix: captain
+
+- type: entity
+  parent: ClothingNeckChevroneBase
+  id: ClothingNeckMajor #майор
+  name: chevrons of the major
+  description: Just a major, what else did you expect?
+  components:
+  - type: Sprite
+    state: Major
+  - type: Clothing
+    equippedPrefix: Major
+
+- type: entity
+  parent: ClothingNeckChevroneBase
+  id: ClothingNecklieutenantcolonel #подполковник
+  name: chevrons of the lieutenant colonel
+  description: "Comrade Lieutenant Colonel, allow me to address!"
+  components:
+  - type: Sprite
+    state: lieutenantcolonel
+  - type: Clothing
+    equippedPrefix: lieutenantcolonel
+
+- type: entity
+  parent: ClothingNeckChevroneBase
+  id: ClothingNeckColonel #полковник
+  name: Colonel's chevrons
+  description: "T.Ladle, allow me to address!"
+  components:
+  - type: Sprite
+    state: colonel
+  - type: Clothing
+    equippedPrefix: colonel
+
+- type: entity
+  parent: ClothingNeckChevroneBase
+  id: ClothingNeckDecCap #капитан-детектив
+  name: chevron of the captain-detective
+  description: "Andrew, we have a corpse! Maybe a crime"
+  components:
+  - type: Sprite
+    state: CaptainDec
+  - type: Clothing
+    equippedPrefix: CaptainDec
+
+- type: entity
+  parent: ClothingNeckChevroneBase
+  id: ClothingNeckDecMaj #майор-детектив
+  name: Detective Major's chevron
+  description: From experience, not one or two cases have been solved, but as many as 3.
+  components:
+  - type: Sprite
+    state: MajorDec
+  - type: Clothing
+    equippedPrefix: MajorDec
+
+#------------------------------------------------------------------------------
+#----------------Лодаут--------------------------------------------------------
+
+#------------------ГСБ---------------------
+- type: loadoutGroup
+  id: ChevronNeckHos
+  name: marking-chevron-nec-name
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - HeadofSecurityColonel
+  - HeadofSecurityLiuColonel
+
+- type: loadout
+  id: HeadofSecurityColonel
+  equipment:
+    neck: ClothingNeckColonel
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobHeadOfSecurity
+      time: 252000 #70 hrs
+
+- type: loadout
+  id: HeadofSecurityLiuColonel
+  equipment:
+    neck: ClothingNecklieutenantcolonel
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobHeadOfSecurity
+      time: 126000 #35 hrs
+
+#------------------------------------------
+
+#------------------Варден------------------
+#лодаута у вардена в loadout_groups.yml для neck (шеи) нет, тогда пусть тут будет
+
+- type: loadoutGroup
+  id: ChevronNeckWarden
+  name: marking-chevron-nec-name
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - WardenMajor
+  - WardenLiuColonel
+
+- type: loadout
+  id: WardenLiuColonel #подполковник
+  equipment:
+    neck: ClothingNecklieutenantcolonel
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobWarden
+      time: 252000 #70 hrs
+
+- type: loadout
+  id: WardenMajor
+  equipment:
+    neck: ClothingNeckMajor #майор
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobWarden
+      time: 126000 #35 hrs
+
+#------------------------------------------
+
+#------------------Офицер-СБ---------------
+- type: loadoutGroup
+  id: ChevronNeckOffSec
+  name: marking-chevron-nec-name
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - OfficerSecurityCaptain
+  - OfficerSecurityStLiut
+  - OfficerSecurityLiut
+  - OfficerSecuritySTSergant
+  - OfficerSecuritySergant
+
+- type: loadout
+  id: OfficerSecurityCaptain
+  equipment:
+    neck: ClothingNeckCaptain #капитан
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobSecurityOfficer
+      time: 252000 #70 hrs
+
+- type: loadout
+  id: OfficerSecurityStLiut #старлей
+  equipment:
+    neck: ClothingNeckLiuten
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobSecurityOfficer
+      time: 216000 #60 hrs
+
+- type: loadout
+  id: OfficerSecurityLiut #лейтенант
+  equipment:
+    neck: ClothingNeckJunLiuten
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobSecurityOfficer
+      time: 180000 #50 hrs
+
+- type: loadout
+  id: OfficerSecuritySTSergant #старший сержант
+  equipment:
+    neck: ClothingNeckSTSergant
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobSecurityOfficer
+      time: 108000 #30 hrs
+
+- type: loadout
+  id: OfficerSecuritySergant #сержант
+  equipment:
+    neck: ClothingNeckSergant
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobSecurityOfficer
+      time: 18000 #5 hrs
+
+#------------------------------------------
+
+#------------------Детектив---------------
+- type: loadoutGroup
+  id: ChevronNeckDec
+  name: marking-chevron-nec-name
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - DetCaptain
+  - DetMajor
+
+- type: loadout
+  id: DetCaptain
+  equipment:
+    neck: ClothingNeckDecCap #капитан
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobDetective
+      time: 144000 #40 hrs
+
+- type: loadout
+  id: DetMajor #майор
+  equipment:
+    neck: ClothingNeckDecMaj
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobDetective
+      time: 252000 #70 hrs
