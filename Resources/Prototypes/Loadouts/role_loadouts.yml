@@ -394,6 +394,7 @@
 #  - Inventory # Corvax-Loadouts
   - HeadofSecurityHead
   - HeadofSecurityNeck
+  - ChevronNeckHos #Rayten-Loadouts (Vanilla)
   - HeadofSecurityJumpsuit
   - SecurityBackpack
   - SecurityBelt
@@ -411,6 +412,7 @@
 #  - Inventory # Corvax-Loadouts
   - WardenHead
   - WardenJumpsuit
+  - ChevronNeckWarden #Rayten-Loadouts (Vanilla)
   - SecurityBackpack
   - SecurityBelt
   - WardenOuterClothing
@@ -427,6 +429,7 @@
 #  - Inventory # Corvax-Loadouts
   - SecurityHead
   - SecurityJumpsuit
+  - ChevronNeckOffSec #Rayten-Loadouts (Vanilla)
   - SecurityBackpack
   - SecurityOuterClothing
   - SecurityShoes
