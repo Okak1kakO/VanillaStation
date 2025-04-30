@@ -170,8 +170,9 @@
   minLimit: 0
   maxLimit: 1
   loadouts:
-  - WardenMajor
   - WardenLiuColonel
+  - WardenMajor
+  - WardenCaptain
 
 - type: loadout
   id: WardenLiuColonel #подполковник
@@ -196,16 +197,15 @@
       time: 126000 #50 hrs
 
 - type: loadout
-  id: OfficerSecurityCaptain
+  id: WardenCaptain
   equipment:
     neck: ClothingNeckCaptain #капитан
   effects:
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:RoleTimeRequirement
-      role: JobSecurityOfficer
-      time: 252000 #30 hrs
-
+      role: JobWarden
+      time: 252000 #70 hrs
 #------------------------------------------
 
 #------------------Офицер-СБ---------------
