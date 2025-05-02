@@ -16,28 +16,6 @@
 
 - type: entity
   parent: ClothingNeckChevroneBase
-  id: ClothingNeckSergant #сержант
-  name: chevrons of a sergeant!!!
-  description: Sir, yes, sir!
-  components:
-  - type: Sprite
-    state: sergant
-  - type: Clothing
-    equippedPrefix: sergant
-
-- type: entity
-  parent: ClothingNeckChevroneBase
-  id: ClothingNeckSTSergant #старший сержант
-  name: chevrons of the senior sergeant
-  description: Now he is told "Sir, yes, sir!"
-  components:
-  - type: Sprite
-    state: STsergant
-  - type: Clothing
-    equippedPrefix: STsergant
-
-- type: entity
-  parent: ClothingNeckChevroneBase
   id: ClothingNeckJunLiuten
   name: chevrons of a lieutenant #лейтенант
   description: For some reason, everyone wants to dance with you.
@@ -146,7 +124,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobHeadOfSecurity
-      time: 252000 #70 hrs
+      time: 0
 
 - type: loadout
   id: HeadofSecurityLiuColonel
@@ -157,7 +135,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobHeadOfSecurity
-      time: 126000 #35 hrs
+      time: 0
 
 #------------------------------------------
 
@@ -205,7 +183,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobWarden
-      time: 252000 #70 hrs
+      time: 0
 #------------------------------------------
 
 #------------------Офицер-СБ---------------
@@ -250,4 +228,4 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobSecurityOfficer
-      time: 180000 #50 hrs
+      time: 0

@@ -7,20 +7,6 @@
     "y": 32
   },
   "states": [
-    {
-      "name": "sergant"
-    },
-	{
-      "name": "sergant-equipped-NECK",
-      "directions": 4
-    },
-	{
-      "name": "STsergant-equipped-NECK",
-      "directions": 4
-    },
-	{
-      "name": "STsergant"
-    },
 	{
       "name": "juniorLiutinant-equipped-NECK",
       "directions": 4
@@ -41,7 +27,7 @@
     },
 	{
       "name": "captain"
-    },	
+    },
 	{
       "name": "Major-equipped-NECK",
       "directions": 4
@@ -62,20 +48,6 @@
     },
 	{
       "name": "colonel"
-    },
-	{
-      "name": "CaptainDec-equipped-NECK",
-      "directions": 4
-    },
-	{
-      "name": "CaptainDec"
-    },
-	{
-      "name": "MajorDec-equipped-NECK",
-      "directions": 4
-    },
-	{
-      "name": "MajorDec"
     }
   ]
 }
