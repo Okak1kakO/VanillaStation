@@ -61,7 +61,6 @@ namespace Content.IntegrationTests.Tests
         {
             // Corvax-Start
             "CorvaxAvrite",
-            "CorvaxDelta",
             "CorvaxSilly",
             "CorvaxOutpost",
             "CorvaxAstra",
@@ -70,7 +69,6 @@ namespace Content.IntegrationTests.Tests
 			"CorvaxIshimura",
 			"CorvaxPaper",
 			"CorvaxCute",
-            "CorvaxPilgrim",
             "CorvaxSplit",
             "CorvaxTerra",
             "CorvaxFrame",

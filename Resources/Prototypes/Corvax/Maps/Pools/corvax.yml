@@ -2,10 +2,8 @@
   id: CorvaxMapPool
   maps:
   # Highpop
-  - CorvaxDelta
   - CorvaxAvrite
   - CorvaxAstra
-  - CorvaxPilgrim
   - Bagel
   - Box
   # Midpop
