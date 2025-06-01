@@ -531,7 +531,7 @@
     proto: OxygenBreatherFelinid
   equipment:
     pocket1: DoubleEmergencyOxygenTankFilled
-    mask: ClothingMaskBreathFelinid
+    mask: ClothingMaskBreath
 
 - type: loadout
   id: EmergencyOxygenFelinid
